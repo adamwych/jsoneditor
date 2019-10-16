@@ -818,7 +818,7 @@ treemode.getDomSelection = function () {
     path: node ? node.getInternalPath() : null,
     domName: domName,
     range: range,
-    paths: this.multiselection.length > 0
+    paths: this.multiselection.nodes.length > 0
       ? this.multiselection.nodes.map(node => node.getInternalPath())
       : null,
     scrollTop: this.scrollableContent ? this.scrollableContent.scrollTop : 0
